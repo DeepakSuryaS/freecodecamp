@@ -1,0 +1,99 @@
+body{
+  font-family: 'Roboto Mono', monospace;  
+}
+
+h1{
+  color: black;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#calcOutput{
+  background-color: black;
+  color: white;
+  height: 100px;
+  width: 650px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+#history{
+  padding-left: 25px;
+  font-size: 22px;
+}
+
+#calculator{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+#steps{
+  padding-left: 25px;
+}
+
+a{
+  margin: 5px;
+  width: 3.6vw;
+}
+
+footer{
+  text-align: center;
+}
+
+footer p a{
+  color: green;
+  text-decoration: none;
+}
+
+footer p a:hover{
+  color: red;
+  text-decoration: none;
+}
+
+footer ul{
+  margin-left: -50px;  
+}
+
+footer ul li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+.btn {
+  width: 150px;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 5px 5px black;
+  border-radius: 0px;
+  margin: 20px auto;
+  padding: 10px 44px;
+  position: relative;
+}
+.btn::before {
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: '';
+  width: 10%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btn .btn-text {
+  color: white;
+  mix-blend-mode: difference;
+}
+.btn:hover::before {
+  background: black;
+  width: 100%;
+}
+
+
+.bigButton{
+  width: 220px;
+}
