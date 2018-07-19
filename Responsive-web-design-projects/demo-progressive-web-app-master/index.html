@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey form for FCC</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id="title">Survey form</h1>
+<div class="container">
+  <p id="description">Let's see how we can improve FCC</p>
+  <form name="fcc" method="get" action="" id="survey-form">
+    <div class="rows">
+      <div class="labels">
+        <label for="name" id="name-label">Name</label>
+      </div>
+      <div class="inputs">
+        <input type="text" name="name" id="name" placeholder="Enter your name here" required class="input-field">
+      </div>
+    </div>
+    <div class="rows">
+      <div class="labels">
+        <label for="email" id="email-label">E-mail</label>
+      </div>
+      <div class="inputs">
+        <input type="email" name="email" id="email" placeholder="Enter your E-mail here" required class="input-field">
+      </div>
+    </div>
+    <div class="rows">
+      <div class="labels">
+        <label for="age" id="number-label">Age</label>
+      </div>
+      <div class="inputs">
+        <input type="number" name="age" id="number" placeholder="Age" min="1" max="125" class="input-field">
+      </div>
+    </div>
+    <div class="rows">
+      <div class="labels">
+        <label for="currentPos">Which options best describes you?</label>
+      </div>
+      <div class="inputs">
+        <select name="currentPos" id="dropdown" class="dropdown">
+          <option disabled value>Select an option</option>
+          <option value="student">Student</option>
+          <option value="fulltime">Full time job</option>
+          <option value="parttime">Part time job</option>
+          <option value="looking">Looking for job</option>
+        </select>
+      </div>
+    </div>
+    <div class="rows">
+      <div class="labels">
+        <label for="userRating" id="name-label">How likely are you to recommend FCC to a friend?</label>
+      </div>
+      <div class="inputs">
+        <ul style="list-style: none;">
+          <li class="radio"><label><input type="radio" value="1" name="radio-buttons" class="userRatings">Maybe</label></li>
+          <li class="radio"><label><input type="radio" value="2" name="radio-buttons" class="userRatings">Definitely</label></li>
+          <li class="radio"><label><input type="radio" value="3" name="radio-buttons" class="userRatings">Nope</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rows">
+      <div class="labels">
+        <label for="most-like">What do you most like about FCC?</label>
+      </div>
+      <div class="inputs">
+        <select name="most-like" id="dropdown" class="most-like">
+          <option disabled value>Select an option</option>
+          <option value="student">Community</option>
+          <option value="fulltime">Challenges</option>
+          <option value="parttime">Open Source</option>
+          <option value="looking">Projects</option>
+        </select>
+      </div>
+    </div>
+    <div class="rows">
+      <div class="labels">
+        <label for="preferences">What shall we improve? <br> <span>(Check all that apply)<span></label>
+      </div>
+      <div class="inputs">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox">
+            <label><input name="prefer" value="1" type="checkbox">Front end</label>
+            <label><input name="prefer" value="2" type="checkbox">Back end</label>
+            <label><input name="prefer" value="3" type="checkbox">Data visualization</label>
+            <label><input name="prefer" value="4" type="checkbox">Challenges</label>
+            <label><input name="prefer" value="5" type="checkbox">Gitter help</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="rows">
+      <div class="labels">Any Suggestions or comments?</div>
+      <div class="inputs"><textarea name="comment" placeholder="Enter your comments and suggestions here..." class="input-field" id="comments" cols="30" rows="10"></textarea></div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
